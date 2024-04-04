@@ -1,0 +1,23 @@
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;  
+    color: white;  
+    margin: 2rem 0 0 0;
+}
+
+.footer-copyright {     
+    color: white;
+    align-self: center;   
+}
+
+.footer-credits {
+    color: white;
+    align-self: center;
+    font-size: .8rem;    
+
+    p {
+        margin: 0;
+    }
+}
+

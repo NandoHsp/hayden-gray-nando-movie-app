@@ -1,0 +1,70 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+  .favorites-page-wrapper {
+    width: 100%;
+    min-height: 70vh;
+    margin: 1rem;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin: 0;
+  }
+
+  .favorites-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  @media (min-width: 46.5em) {
+    .favorites-list {
+      justify-content: flex-start;
+    }
+  }
+  
+  .favorite-movie {
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .movie-poster-favorite {
+    border-radius: 8px;
+  }
+  .favorite-movie-button {
+    
+    margin: 0;
+    .favorite-svg {
+      position: absolute;
+      bottom: 8rem;
+      right: 1rem;
+      width: 80px;
+      height: 80px;
+    }
+  }
+  .movie-rating-favorite {
+    margin: .5rem 0;
+  }
+  @media (min-width: 25.75em) {
+    .favorite-movie-title {
+      margin-top: .5rem;
+    }
+  }
+
+  .movie-favorite-overview {
+    margin: 0.5rem 0;
+    max-width: 300px; }
+
+  .no-favorites {
+    text-align: center;
+    margin-top: 2rem;
+  }

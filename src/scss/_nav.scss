@@ -1,0 +1,67 @@
+.navbar {
+    background-color: yellow;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 45px;    
+  }
+
+  .hamburger-icon {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+  }
+  .nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .navbar a {
+    font-family: 'Protest Strike', sans-serif;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.8rem;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .navbar a:hover {
+    background-color: #FF9900;
+  }
+  .nav-links ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+  /* Add media query for mobile devices */
+  @media (max-width: 767px) {
+    .hamburger-icon {
+      display: block;
+    }
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    //   height: 200px;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: yellow;
+    }
+    .navbar.mobile-menu-open .nav-links {
+      display: flex;
+      z-index: 10;
+    }
+    .nav-links ul {
+        flex-direction: column;
+        li {
+            margin: 30px 0;
+        }
+    }
+  }
